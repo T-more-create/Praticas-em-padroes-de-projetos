@@ -106,3 +106,7 @@ Este repositório contém a implementação de um sistema de gerenciamento de ev
      }
    }
    ```
+## Finalização
+- Feito por:
+- Maria Carolina de Araújo de Sousa
+- Taíssa Moreira da Silva
