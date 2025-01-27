@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "b4a2a133-40d0-4e86-918f-79a4e2400db3",
+		"name": "Camada-de-Aplicação",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40401971"
+	},
+	"item": [
+		{
+			"name": "registrar participante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "mari",
+							"type": "text"
+						},
+						{
+							"key": "event_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/participants/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"participants",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar evento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "volei",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "23/05/2025",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/events/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "procurar evento por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/events/listar/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"listar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar todos os eventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/events/listar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar user pelo id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/participants/4/ola",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"participants",
+						"4",
+						"ola"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar participante de um evento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/participants/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"participants",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar dados",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_updated",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "mari",
+							"type": "text"
+						},
+						{
+							"key": "event_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/participants/2/updated",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"participants",
+						"2",
+						"updated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar evento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_updated",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "praça",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "28/05/2025",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/events/6/updated",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"6",
+						"updated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar participante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/participants/2/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"participants",
+						"2",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar evento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/events/6/delete",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"events",
+						"6",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
